@@ -1,0 +1,646 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+body{
+	margin: 0px;
+	font-family: 'Raleway';
+}
+
+*{
+	box-sizing: border-box;
+}
+
+a{
+	text-decoration: none;
+}
+
+ul{
+	list-style: none;
+}
+
+input, textarea{
+    padding: 5px;
+    border-radius: 2px;
+    border: solid 1px #a9a9a9;
+}
+
+section{
+	padding-top: 90px;
+}
+
+/* Componentes comuns */
+
+.btn{
+	border: 1px solid #ed2c6f;
+	border-radius: 23px;
+	background: #ed2c6f;
+	color: white;
+	height: 36px;
+	width: 160px;
+	cursor: pointer;
+    font-size: 15px;
+}
+
+.container{
+	width: 1140px;
+	margin: 0 auto;
+}
+
+.linha{
+	display: flex;
+	margin: auto;
+}
+
+.linha.alinharVertical{
+	align-items: center;
+}
+
+.titulo {
+	font-size: 2.6em;
+	font-weight: 600;
+	text-align: center;
+	color: #ed2c6f;
+}
+
+.subtitulo{
+    font-size: 1.2em;
+    font-weight: 400;
+    text-align: center;
+}
+
+.centralizador{
+	text-align: center;
+}
+
+/* Fim Componentes comuns */
+
+
+/*botao menu hamburguer*/
+.botao.menuHamburguer{
+	background: none;
+	display: none; /*tem q desaparecer qndo estiver no modo visualizacao pc*/
+    border: 1px solid white;
+	border-radius: 16px;
+
+}
+
+.botao .fa{
+	color: white;
+	padding: 7px;
+	font-size: 15px;
+}
+/*fim botao hamburguer*/
+
+
+/*header*/	
+#cabecalho{
+	width: 100%;
+	background-color: transparent;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 10;
+	padding: 10px;
+	height: 40px;
+}
+
+#navegacao{
+	display: inline-flex;
+	margin-left: auto;
+}
+
+.menuHorizontal a{
+	padding: 0px 10px;
+	color: #fff;
+	font-size: 16px;
+    text-decoration: none;
+}
+
+.logo img{
+	height: 30px;
+    margin-top: -4px;
+}
+
+  /*fim da header*/
+
+
+  /*inicio banner*/
+#banner{
+    height: 100vh;
+    background-image: url('../images/banner.png');
+    background-repeat: no-repeat;
+    background-size: cover;	
+    padding-top: 15%;
+    padding-left: 80px;
+}
+
+#banner .titulo {
+	color: #fff;
+	text-align: left;	
+}
+
+#banner .subtitulo {
+	color: #fff;
+	text-align: left;
+	font-size: 18px;
+}
+
+.btn.banner{
+	width: 210px;
+}
+
+  /*fim do banner*/
+
+/*area do Sobre*/
+
+#sobre .subtitulo {
+	color: white;
+	padding-top: 223px;
+}
+
+.background{
+	background-image: url('../images/lumber-mask2.gif');
+	background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#sobre .background{
+    height: 300px;
+}
+
+/*fim area sobre*/
+
+
+/* Inicio Curso */
+
+.img-cursos {
+	height: 350px;
+	text-align: center;
+	color: #ffffff;
+    position: relative;
+}
+
+.img-cursos h1{
+	padding-top: 280px;
+    height: 100%;
+    font-weight: 600;
+	/*Gradiente para dar destaque no titulo do curso*/
+	background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	margin-bottom: 0px;
+	font-size: 30px;
+}
+
+.img-cursos.customizacao {
+	background-image: url('../images/criado-amarelo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -55px;
+}
+
+.img-cursos.restauracao{
+	background-image: url('../images/restauracao.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: -22px;
+}
+
+.img-cursos.criacao{
+	background-image: url('../images/cabeceira3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -82px;
+}
+
+.img-cursos.estofado{
+	background-image: url('../images/sofa-pallets.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -167px;
+}
+
+.desc-curso{
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: #eee;
+    display: none;
+}
+
+.desc-curso p {
+    color: #333;
+    font-size: 18px;
+    transition-duration: 1s;
+    margin-top: 150px;
+}
+
+/*Fim Curso*/
+
+/*Inicio area contato*/
+.form-group input,
+.form-group textarea{
+	width: 60%;
+}
+
+form{
+	padding-top: 20px;
+}
+
+#contato{
+	margin-bottom: 80px;
+} 
+
+
+/*Fim area contato*/
+
+
+
+/*inpiracoes*/
+#inspiracoes img{
+	height: 350px;
+}
+
+.row img{
+    margin-top: 10px;
+}
+
+/*fim area inspiracoes*/
+
+
+/*footer*/
+.rodape{
+	text-align: center;
+	background-color: #ccc;
+	height: 30px;
+}
+
+.redessociais .fa{
+    padding-left: 15px;
+}
+
+footer{
+	background-image: url("../images/footer.png");
+}
+
+#newsletter p{
+	color: white;
+}
+
+#newsletter input{
+	width: 30%;
+}
+
+#newsletter .btn{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+/* Mensagem formulario */
+.mensagem {
+	display: none;
+	background: #fff;
+	border-radius: 10px;
+	position: fixed;
+	top: 25%;
+	left: 25%;
+    box-shadow: 1px 1px 14px 1px #444;
+}
+
+.mensagem .conteudo {
+	padding: 50px;
+	position: relative;
+}
+
+.mensagem .conteudo a {
+	position: absolute;
+	color: #000;
+
+	right: 15px;
+	top: 15px;
+}
+
+/*classe usada para o formulário e para o cabecalho*/
+.visivel {  
+	display: block;
+}
+
+
+/*Responsivo*/
+@media (max-width: 1140px){
+
+	.container{
+		width: 700px;	
+	}
+
+	.botao.menuHamburguer{
+		display: block;
+	    margin-bottom: -6px;
+    	margin-top: -6px;
+	}
+
+	.logo img{
+   		margin-left: 50%;
+	}
+
+	.cardContainer{
+		flex-wrap: wrap; /*quebra a funçao do display flex, pq o display flex deixa um ao lado do outro*/
+	    justify-content: center;
+	}
+
+	/*botao hamburguer*/
+	#cabecalho .container{
+		position: relative;
+	}
+	#navegacao{
+		display: none;
+		position: absolute;
+		top: 30px;
+		left: 0px;
+		width: 100%;
+	}
+
+	#navegacao ul{
+		flex-direction: column;
+		list-style: none;
+	}
+
+	#navegacao a{
+		display: block;
+		padding: 15px 0px;
+		padding-left: 20px;
+		background: #ed2c6f;
+		color: white;
+	}
+	
+	#navegacao.visivel{
+		display: block;
+	}
+	/*fim botao hamburguer*/
+
+	.logo img{
+		height: 22px;
+	}
+
+	section {
+    padding-top: 36px;
+	}
+
+	.img-cursos.criacao{
+	    background-position-y: -1px;
+	}
+
+	.img-cursos.restauracao{
+		background-position-x: -1px;
+	}
+
+	.cardContainer .row {
+    	width: 100%;
+	}
+
+	#inspiracoes img {
+		height: 100%;
+	}
+
+	#sobre .subtitulo{
+	    padding-top: 232px;
+    	font-size: 16px;
+	}
+
+}
+
+
+@media (max-width: 768px) {
+	.container{
+		width: 100%; /*tamanho usado para varios tamanhos de smartphones*/
+		padding: 0 10px 0 10px;
+	}
+	#navegacao{
+		display: none;
+	}
+	.botao.menuHamburguer{
+		display: block;
+		margin-bottom: -6px;
+    	margin-top: -6px;
+	}
+
+	.logo img{
+	    margin-left: 50%;
+	}
+
+	/*botao hamburguer*/
+	#cabecalho .container{
+		position: relative;
+	}
+	#navegacao{
+		display: none;
+		position: absolute;
+		top: 30px;
+		left: 0px;
+		width: 100%;
+	}
+
+	#navegacao ul{
+		flex-direction: column;
+		list-style: none;
+	}
+
+	#navegacao a{
+		display: block;
+		padding: 15px 0px;
+		padding-left: 20px;
+		background: #ed2c6f;
+		color: white;
+	}
+	
+	#navegacao.visivel{
+		display: block;
+	}
+	/*fim botao hamburguer*/
+
+	.cardContainer .row{
+		width: 100%;
+	}
+
+	.img-cursos.estofado{
+	    background-position-y: -42px;
+	}
+
+	.img-cursos.criacao{
+		background-position-y: -40px;
+	}
+
+	.img-cursos.restauracao{
+		background-position-x: -1px;
+	}
+
+	#inspiracoes img {
+		height: 100%;
+	}
+
+	#sobre .subtitulo{
+	    padding-top: 168px;
+    	font-size: 14px;
+	}
+
+
+}
+
+@media(max-width: 480px) {
+	#navegacao{
+		display: none;
+	}
+	.botao.menuHamburguer{
+		display: block;
+		margin-bottom: -6px;
+    	margin-top: -6px;
+	}
+
+	.logo img{
+	    margin-left: 10%;
+	}
+
+	/*botao hamburguer*/
+	#cabecalho .container{
+		position: relative;
+	}
+	#navegacao{
+		display: none;
+		position: absolute;
+		top: 30px;
+		left: 0px;
+		width: 100%;
+	}
+
+	#navegacao ul{
+		flex-direction: column;
+		list-style: none;
+	}
+
+	#navegacao a{
+		display: block;
+		padding: 15px 0px;
+		padding-left: 20px;
+		background: #ed2c6f;
+		color: white;
+	}
+	
+	#navegacao.visivel{
+		display: block;
+	}
+	/*fim botao hamburguer*/
+
+	.img-cursos.estofado{
+	    background-position-y: -42px;
+	}
+
+	.img-cursos.criacao{
+		background-position-y: -40px;
+	}
+
+	.img-cursos.customizacao {
+	    background-position-y: 1px;
+	}
+
+	.img-cursos{
+		height: 100%;
+	}
+
+	.cardContainer .row {
+    width: 100%;
+	}
+
+	#inspiracoes img {
+		height: 100%;
+	}
+
+	#sobre .subtitulo{
+	    padding-top: 168px;
+    	font-size: 14px;
+	}
+
+
+}
+
+@media (max-width: 375px) {
+	#navegacao{
+		display: none;
+	}
+	.botao.menuHamburguer{
+		display: block;
+		margin-bottom: -6px;
+    	margin-top: -6px;
+	}
+	.logo img{
+		margin-left: 10%;
+	    width: 65%;
+	}
+
+	/*botao hamburguer*/
+	#cabecalho .container{
+		position: relative;
+	}
+	#navegacao{
+		display: none;
+		position: absolute;
+		top: 30px;
+		left: 0px;
+		width: 100%;
+	}
+
+	#navegacao ul{
+		flex-direction: column;
+		list-style: none;
+	}
+
+	#navegacao a{
+		display: block;
+		padding: 15px 0px;
+		padding-left: 20px;
+		background: #ed2c6f;
+		color: white;
+	}
+	
+	#navegacao.visivel{
+		display: block;
+	}
+	/*fim botao hamburguer*/
+
+	.img-cursos.estofado{
+	    background-position-y: -1px;
+	}
+
+	.img-cursos.criacao{
+		background-position-y: -40px;
+	}
+
+	.img-cursos.customizacao {
+	    background-position-y: 0px;
+	}
+
+	.img-cursos.criacao{
+	    background-position-y: 1px;
+	}
+
+	.img-cursos{
+		height: 100%;
+	}
+
+	.cardContainer .row {
+    	width: 100%;	
+    }   
+
+    #inspiracoes img {
+		height: 100%;
+	}
+
+	#sobre .subtitulo{
+	padding-top: 161px;
+    font-size: 14px;
+	}
+
+	#banner .titulo{
+    	font-size: 2em;
+	}
+
+}
